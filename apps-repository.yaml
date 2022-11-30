@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: nginx-app
+  namespace: apps
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  url: https://github.com/swapnachagam/flux-sample-app
